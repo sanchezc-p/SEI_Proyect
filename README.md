@@ -6,12 +6,12 @@ Este repositorio contiene todos los recursos necesarios para integrar y probar e
 ## Estructura del Repositorio
 
 ```
-├── picorv32_ip        # Núcleo IP de PicoRV32 para Vivado
-├── integration_design # Proyecto de Vivado para integrar PicoRV32 en PYNQ-Z2
+├── picorv32-vivado-ip-main        # Núcleo IP de PicoRV32 para Vivado
+├── Proyecto # Proyecto de Vivado para integrar PicoRV32 en PYNQ-Z2
 └── test_files         # Archivos de prueba para validar el funcionamiento
 ```
 
-### **1. picorv32_ip**
+### **1. picorv32-vivado-ip-main**
 Este directorio contiene los archivos fuente en Verilog para el núcleo **PicoRV32** y su configuración como IP para Vivado. El núcleo está configurado como un procesador RISC-V RV32I mínimo, ideal para su integración en proyectos basados en FPGA.
 
 #### Archivos:
@@ -25,7 +25,7 @@ Este directorio contiene los archivos fuente en Verilog para el núcleo **PicoRV
 
 ---
 
-### **2. integration_design**
+### **2. Proyecto**
 Esta carpeta contiene los archivos del proyecto Vivado para integrar el núcleo **PicoRV32** en la placa de desarrollo PYNQ-Z2. El diseño conecta el núcleo a periféricos esenciales y recursos como memoria y GPIOs.
 
 #### Archivos:
@@ -68,11 +68,11 @@ Este directorio contiene programas de prueba, scripts y recursos para validar la
 
 ### Paso 1: Importar el Núcleo IP
 1. Abre Vivado y crea un nuevo proyecto.
-2. Agrega el directorio `picorv32_ip/vivado_ip/` a las rutas del repositorio de IP.
+2. Agrega el directorio `picorv32-vivado-ip-main/vivado_ip/` a las rutas del repositorio de IP.
 3. Agrega el núcleo PicoRV32 a tu diseño en bloque.
 
 ### Paso 2: Usar el Diseño de Integración
-1. Abre el proyecto `integration_design/design_1.xpr` en Vivado.
+1. Abre el proyecto `Proyecto/design_1.xpr` en Vivado.
 2. Genera el bitstream.
 3. Programa la placa PYNQ-Z2 con el bitstream generado.
 
