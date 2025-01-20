@@ -1,0 +1,38 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717936",
+   "Default View_TopLeft":"-260,-312",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port leds_4bits -pg 1 -lvl 5 -x 1280 -y 110 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 5 -x 1280 -y 80 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y -140 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y -200 -defaultsOSRD
+preplace inst picorv32_0 -pg 1 -lvl 3 -x 840 -y -20 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 840 -y -150 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 840 -y 110 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 220 -y -20 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 550 -y -20 -defaultsOSRD
+preplace inst delayed_reset_0 -pg 1 -lvl 1 -x 220 -y 140 -defaultsOSRD
+preplace inst picorv32_0_axi_periph -pg 1 -lvl 4 -x 1120 -y -140 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 3 NJ -140 N -140 N
+preplace netloc proc_sys_reset_0_mb_reset 1 1 1 400 -60n
+preplace netloc util_vector_logic_0_Res 1 2 1 700 -20n
+preplace netloc delayed_reset_0_o_reset 1 0 2 50 -120 390
+preplace netloc clk_wiz_0_clk_out1 1 0 4 40 -130 NJ -130 710J -230 970
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 400 40 690 -240 980
+preplace netloc clk_wiz_0_locked 1 0 4 30 -270 NJ -270 NJ -270 950
+preplace netloc reset_rtl_1 1 0 3 20 -160 NJ -160 NJ
+preplace netloc axi_gpio_0_GPIO2 1 3 2 970 80 N
+preplace netloc axi_gpio_0_GPIO 1 3 2 NJ 100 1260
+preplace netloc picorv32_0_M_AXI 1 3 1 960 -200n
+preplace netloc picorv32_0_axi_periph_M00_AXI 1 2 3 720 -260 NJ -260 1260
+levelinfo -pg 1 0 220 550 840 1120 1280
+pagesize -pg 1 -db -bbox -sgen -110 -280 1400 370
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"2"
+}
